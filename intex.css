@@ -1,0 +1,96 @@
+
+@font-face {
+    font-family: 'Icons';
+    src: url('assets/fonts/Icons.woff2') format('woff');
+}
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('assets/fonts/Segoe-100.woff2') format('woff2');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('assets/fonts/Segoe-200.woff2') format('woff2');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('assets/fonts/Segoe-400.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('assets/fonts/Segoe-600.woff2') format('woff2');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('assets/fonts/Segoe-700.woff2') format('woff2');
+    font-weight: 700;
+}
+
+/* __reset__ */
+
+body,p,a,ul,li{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+.main-container{
+    width: 100%;
+    height: auto;
+    font-family: 'Segoe UI';
+}
+.nav-container{
+    width: 100%;
+    display: flex;
+    padding: 2px 0px;
+    position: relative;
+    align-items: center;
+}
+.menu-container{
+    width: 48px;
+    height: 34px;
+    margin: 1px;
+    display: block;
+    font-family: 'Icons';
+    font-size: 20px;
+    line-height: 15px;
+    padding: 8px 0px 8px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+/* .menu{
+    width: 20px;
+    height: 20px;
+    line-height: 15px;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    white-space: nowrap;
+    text-wrap-mode: nowrap;
+    box-sizing: border-box;
+} */
+ .menu-container i{
+    margin-top: 8px;
+ }
+ .searchlogo-container{
+    display: flex;
+    text-align: center;
+    padding: 6px 8px 8px 0px;
+    margin: 0px 10px 1px 9px;
+    cursor: pointer;
+ }
+ .logo-container{
+    display: flex;
+    margin: -1px 0px 1px 8px;
+    padding: 7px 4px 10px 4px;
+    cursor: pointer;
+    align-items: flex-start;
+    /* justify-content: flex-start; */
+ }
+ .logo-container img{
+    width: 108px;
+    height: auto;
+ }
