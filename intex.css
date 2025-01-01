@@ -37,12 +37,13 @@ body,p,a,ul,li{
     text-decoration: none;
     list-style-type: none;
 }
-.main-container{
+.main-wrap{
     width: 100%;
     height: auto;
     font-family: 'Segoe UI';
 }
 .nav-container{
+    /* height: 53px; */
     width: 100%;
     display: flex;
     padding: 2px 0px;
@@ -51,7 +52,7 @@ body,p,a,ul,li{
 }
 .menu-container{
     width: 48px;
-    height: 34px;
+    height: 32px;
     margin: 1px;
     display: block;
     font-family: 'Icons';
@@ -61,29 +62,28 @@ body,p,a,ul,li{
     text-align: center;
     cursor: pointer;
 }
-/* .menu{
-    width: 20px;
-    height: 20px;
-    line-height: 15px;
-    display: inline-block;
-    margin-top: 10px;
-    text-align: center;
-    white-space: nowrap;
-    text-wrap-mode: nowrap;
-    box-sizing: border-box;
-} */
  .menu-container i{
     margin-top: 8px;
  }
- .searchlogo-container{
+ .MScontainer{
     display: flex;
+    flex: 1 0 auto;
+    float: right;
+    margin-top: 2px;
+ }
+ .searchlogo-container{
+    height: fit-content;
+    display: flex;
+    /* flex: 0 1 auto; */
     text-align: center;
-    padding: 6px 8px 8px 0px;
-    margin: 0px 10px 1px 9px;
+    overflow-x: visible;
+    padding: 8px 8px 8px 0px;
+    margin: 5px 10px 1px 9px;
     cursor: pointer;
  }
  .logo-container{
     display: flex;
+    flex: 1;
     margin: -1px 0px 1px 8px;
     padding: 7px 4px 10px 4px;
     cursor: pointer;
@@ -94,3 +94,121 @@ body,p,a,ul,li{
     width: 108px;
     height: auto;
  }
+ .line{
+    height: 1px;
+    width: auto;
+    display: block;
+    position: relative;
+    background-color: #dddddd;
+    margin-top: -1px;
+ }
+ .drop-down-container{
+    height: 34px;
+    display: flex;
+    position: relative;
+    align-items: center;
+ }
+ .drop-down-container button{
+    height: 100%;
+    display: flex !important;
+    gap: 10px;
+    position: relative;
+    font-family: 'Segoe UI';
+    font-size: 15px;
+    font-weight: 600;
+    background-color: transparent;
+    align-items: center;
+    border: none;
+    padding: 0px 16px;
+    cursor: pointer;
+ }
+ /* .drop-down-container button::after{
+    content: "";
+    font-family: 'Icons';
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 6px;
+    position: relative;
+    top: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+ } */
+ .drop-down-container button i{
+    display: flex;
+    height: 12px;
+    font-size: 13.01px;
+    font-weight: 500;
+    margin: 1px 0px 0px 1px;
+ }
+ /* .menu{
+    width: 20px;
+    height: 20px;
+    line-height: 15px;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    white-space: nowrap;
+    text-wrap-mode: nowrap;
+    box-sizing: border-box;
+ } */
+ .main-container{
+    width: 100%;
+    height: auto;
+    position: relative;
+ }
+ .main-intro-container{
+    padding-bottom: 56px;
+ }
+ .intro-container{
+    width: 100%;
+    background-color: #f4fafd;
+    /* white-space: now; */
+ }
+ .main-image-container{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+ }
+ .image-container{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: nowrap;
+ }
+ .image-container img{
+   width: 100%;
+   height: 100%;
+   display: block;
+   object-fit: cover;
+   aspect-ratio: inherit;
+   white-space: nowrap;
+ }
+ .intro-content-container{
+   top: 0;
+   width: 100%;
+   height: auto;
+   display: block;
+   padding: 0px 16px;
+   box-sizing: border-box;
+   background-color: #f4fafd;
+ }
+ .content-container{
+   width: 100%;
+   margin-top: 2rem;
+ }
+ .intro-container{
+   width: 100%;
+   display: block;
+   box-sizing: border-box;
+ }
+ .intro-highlight{
+   display: block;
+   font-family: 'Segoe UI';
+   font-size: 12px;
+ }
+ /* .intro-highlight .highlight{
+   font-family: 'Segoe UI';
+   font-size: 14px;
+ } */
+
+
