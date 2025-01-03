@@ -135,6 +135,17 @@ body,p,a,ul,li{
     box-sizing: border-box;
     cursor: pointer;
  } */
+ .menu{
+  width: 20px;
+  height: 20px;
+  line-height: 15px;
+  display: inline-block;
+  margin-top: 10px;
+  text-align: center;
+  white-space: nowrap;
+  text-wrap-mode: nowrap;
+  box-sizing: border-box;
+}
  .drop-down-container button i{
     display: flex;
     height: 12px;
@@ -335,7 +346,7 @@ body,p,a,ul,li{
    width: 100%;
    display: grid;
    position: relative;
-   padding: 0px 4px;
+   /* padding: 0px 4px; */
    box-sizing: border-box;
  }
  .component-highlight{
@@ -367,18 +378,159 @@ body,p,a,ul,li{
   background-color: #fefefe;
   border-radius: 1rem;
   /* box-shadow: 0 0 0.125rem rgb(0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0.14); */
-
+  box-sizing: border-box;
+}
+.card-image-container{
+  width: 100%;
+  display: block;
+  padding: 8px 8px 0px;
+  box-sizing: border-box;
+}
+.card-image-container img{
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+}
+.card-content{
+  width: 100%;
+  display: grid;
+  /* gap: 4px; */
+  padding: 16px;
+  box-sizing: border-box;
+}
+.card-des-container{
+  width: 100%;
+  display: grid;
+  gap: 0.75rem;
+}
+.card-des-container .card-head{
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: -0.03em;
+  color: #0e1725;
+  margin-top: 4px;
+}
+.card-des-container .card-text{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: -0.03em;
+  color: #17253d;
+}
+.site-link-container{
+  width: 100%;
+  display: block;
+  margin-top: 32px;
+  box-sizing: border-box;
+}
+.link-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.link-container .site-button{
+  display: flex;
+  align-items: center;
+  background-color: #0078D4;
+  border-radius: 8px;
+  padding: 0.6rem;
+}
+.link-container .site-button::after{
+  content: "";
+  font-family: 'Icons';
+  line-height: 1;
+  font-weight: 400;
+  color: #fefefe;
+}
+.link-container .site-link{
+  display: block;
+  color: #004275;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.036em;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+  padding-bottom: 2px;
+}
+.site-find-container{
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  background-color: #f4fafd;
+}
+.site-find-container{
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  background-color: #f4fafd;
+}
+.solution-content-container{
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+#solution-card{
+  margin-top: 24px;
+}
+.pill-bar-container{
+  width: 100%;
+  position: relative;
+  text-size-adjust: 100%;
+  overflow: scroll;
+  overflow-y: hidden;
+  box-sizing: border-box;
+}
+.pill-bar-container::-webkit-scrollbar{
+  display: none;
+}
+.pill-bar{
+  display: flex;
+  gap: 8px;
+  white-space: nowrap;
+}
+.pill-bar .pill-btn{
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.375rem;
+  letter-spacing: -.02em;
+  font-family: 'Segoe UI';
+  padding: 8px 16px 10px;
+  border-radius: 20px;
+  border: none;
+  flex: 0 0 auto;
+  color: #004275;
+  background-color: #0055971A;
+}
+.pill-bar #pillbtn{
+  background-color: #005597;
+  color: #ffffff;
+}
+.drop-up-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0e1726;
+  padding: 24px 0px;
+}
+.drop-up-container .up-button::before{
+  content: "";
+  font-family: 'Icons';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: -.03em;
+  /* transform: rotate(-180deg); */
 }
 
-/* .menu{
-   width: 20px;
-   height: 20px;
-   line-height: 15px;
-   display: inline-block;
-   margin-top: 10px;
-   text-align: center;
-   white-space: nowrap;
-   text-wrap-mode: nowrap;
-   box-sizing: border-box;
-} */
+
+
 
