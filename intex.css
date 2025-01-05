@@ -566,6 +566,7 @@ body,p,a,ul,li{
   box-sizing: border-box;
 }
 .solution-text{
+  width: 100%;
   color: #17253d;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -618,7 +619,16 @@ body,p,a,ul,li{
   padding-bottom: 24px;
 }
 
-
+.drop-up-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0e1726;
+  padding-bottom: 24px;
+}
 
 
 
