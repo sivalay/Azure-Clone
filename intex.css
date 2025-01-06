@@ -397,7 +397,6 @@ body,p,a,ul,li{
 .card-content{
   width: 100%;
   display: grid;
-  /* gap: 4px; */
   padding: 16px;
   box-sizing: border-box;
 }
@@ -585,22 +584,6 @@ body,p,a,ul,li{
 #solution-site-link{
   margin: 0px;
 }
-
-/* .solution-text{
-  width: 100%;
-  color: #17253d;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  letter-spacing: -0.03em;
-  font-weight: 400;
-  cursor: pointer;
-}
-.solution-video{
-  width: 100%;
-  display: flex;
-  box-sizing: border-box;
-  text-size-adjust: 100%;
-} */
 .video-top-link{
   color: #004275;
   /* padding-bottom: 2px; */
@@ -617,6 +600,7 @@ body,p,a,ul,li{
   /* line-height: 1.1226rem; */
   line-height: 1.25rem;
   text-decoration: underline solid rgb(0, 66, 117) auto;
+  /* text-underline-offset: 0.125rem; */
   letter-spacing: -0.48px;
   padding: 0px 0px 3px;
   margin-top: 3px;
@@ -646,20 +630,24 @@ body,p,a,ul,li{
   width: 100%;
   padding-left: 4px;
 }
+#products-card{
+  gap: 0.75rem;
+}
 #services-card{
   width: 100%;
-  /* display: block; */
-  /* position: relative; */
   background-image: url(assets/images/products-bg1.avif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
 }
+#products-card-content{
+  gap: 4px;
+}
 .blank-space{
   height: 220px;
 }
-/* .drop-up-container{
+.drop-up-container{
   width: 100%;
   display: flex;
   align-items: center;
@@ -668,7 +656,91 @@ body,p,a,ul,li{
   font-weight: 600;
   color: #0e1726;
   padding-bottom: 24px;
-} */
+}
+.crad-text-button{
+  display: grid;
+  gap: 0.75rem;
+}
+.crad-text-button .intro-button #btn1{
+  padding: 10px 12px 12px;
+}
+.badge-container{
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e6f2fb;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  /* text-size-adjust: 100%; */
+}
+.badge-container img{
+  width: 24px;
+  height: 24px;
+}
+#services-head{
+  margin: 0px;
+}
+#service-site-link{
+  text-decoration: underline;
+  text-underline-offset: 0.125rem;
+}
+#products-site-link{
+  padding: 0px 4px;
+}
+/* Section-Gartner */
+.site-gartner-container{
+  width: 100%;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}
+.site-gartner{
+  display: block;
+  background-image: url(assets/images/Gartner-bg.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+#gartner-card img{
+  height: 100%;
+  aspect-ratio: 1.33333;
+}
 
-
-
+/*  */
+.card-des-container #service-head{
+  display: block;
+  color: #17253d;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1rem;
+  letter-spacing: .08em;
+  margin-bottom: 12px;
+}
+.drop-up-container{
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0e1726;
+  padding-bottom: 24px;
+}
+.solution-text{
+  width: 100%;
+  color: #17253d;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.03em;
+  font-weight: 400;
+  cursor: pointer;
+}
+.solution-video{
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  text-size-adjust: 100%;
+}
+/*  */
