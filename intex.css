@@ -803,6 +803,7 @@ body,p,a,ul,li{
   letter-spacing: -0.03em;
   cursor: pointer;
 }
+/* background position */
 .background-container{
   /* top: -32px; */
   width: 100%;
@@ -899,39 +900,4 @@ body,p,a,ul,li{
 .optimize-container .site-button{
   padding: 8px;
 }
-/*  */
-/* .card-des-container #service-head{
-  display: block;
-  color: #17253d;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1rem;
-  letter-spacing: .08em;
-  margin-bottom: 12px;
-} */
-/* .drop-up-container{
-  width: 100%;
-  display: flex;
-  align-items: center; 
-  justify-content: space-between;
-  font-size: 16px;
-  font-weight: 600;
-  color: #0e1726;
-  padding-bottom: 24px;
-} */
-/* .solution-text{
-  width: 100%;
-  color: #17253d;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  letter-spacing: -0.03em;
-  font-weight: 400;
-  cursor: pointer;
-} */
-/* .solution-video{
-  width: 100%;
-  display: flex;
-  box-sizing: border-box;
-  text-size-adjust: 100%;
-} */
-/*  */
+
