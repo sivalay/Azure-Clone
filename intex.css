@@ -712,7 +712,6 @@ body,p,a,ul,li{
   padding: 8px 9px 0px;
 }
 #gartner-card img{
-  height: 100%;
   aspect-ratio: 1.33333;
 }
 #gartner-card .card-content{
@@ -737,10 +736,11 @@ body,p,a,ul,li{
   background-color: #f4fafd;
 }
 .site-resources-container .site-component-container{
-  padding: 48px 0px;
+  padding: 48px 0px 0px;
 }
 #resources-container .component-head-container{
   width: 100%;
+  position: relative;
   align-items: center;
   justify-items: center;
 }
@@ -753,8 +753,23 @@ body,p,a,ul,li{
 }
 .site-resource-content{
   width: 100%;
+  height: auto;
   display: block;
   position: relative;
+  box-sizing: border-box;
+  text-size-adjust: 100%;
+}
+
+/* background position */
+.background-container{
+  /* top: -32px; */
+  width: 100%;
+  /* position: relative; */
+  /* position: absolute; */
+  background-image: url(assets/images/resource-bg.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -18px;
   box-sizing: border-box;
 }
 .resource-nav-container{
@@ -803,26 +818,7 @@ body,p,a,ul,li{
   letter-spacing: -0.03em;
   cursor: pointer;
 }
-/* background position */
-.background-container{
-  /* top: -32px; */
-  width: 100%;
-  position: absolute;
-  background-image: url(assets/images/resource-bg.avif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* vertical-align: middle; */
-  box-sizing: border-box;
-}
-.resource-nav-container{
-  width: 100%;
-  position: relative;
-  overflow: scroll;
-  overflow-y: hidden;
-  margin-top: 8px;
-  box-sizing: border-box;
 
-}
 .indicator{
   bottom: 0;
   height: 4px;
@@ -892,12 +888,165 @@ body,p,a,ul,li{
   background: rgb(255, 255, 255, 0.1);
 }
 #resource-card .card-image-container{
-  padding: 16px;
+  padding: 17px 17px;
 }
 #resource-card img{
   aspect-ratio: 1.77778;
 }
-.optimize-container .site-button{
-  padding: 8px;
+
+/* Section-Global */
+.site-global-container{
+  width: 100%;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
 }
+.global-container{
+  width: 100%;
+  display: block;
+  background-image: url(assets/images/Global-bg.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+.global-container .intro-content{
+  padding: 0px 16px;
+  margin: 0;
+}
+#glob-intro .intro-heading h1{
+  color: #f4fafd;
+  text-align: center;
+}
+#glob-intro .intro-paragraph{
+  padding: 0;
+  color: #dceef8;
+  text-align: center;
+}
+.glob-des{
+  padding: 0px 16px;
+}
+#glob-intro .intro-button-container{
+  margin-bottom: 24px;
+}
+#glob-intro .intro-button #btn2{
+  padding: 15px 13px;
+  border: none;
+  background-color: #B3DAF0;
+}
+#glob-intro .intro-button #btn2 span{
+  color: #0e1726;
+  padding-bottom: 2px;
+}
+/* Section-Customer */
+.site-customer-container{
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+.customer-container{
+  width: 100%;
+  display: block;
+  background-image: url(assets/images/customer-bg.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.customer-container .site-component-container{
+  padding: 48px 0px;
+}
+#customer-card{
+  margin-top: 24px;
+  padding: 3px 7px;
+}
+#customer-card .card-image-container{
+  height: auto;
+  object-fit: cover;
+}
+#customer-card .card-image-container img{
+  height: 100%;
+  min-height: 219.422px;
+  object-fit: cover;
+  aspect-ratio: initial;
+}
+#customer-card .card-content{
+  display: grid;
+  gap: 24px;
+}
+.customer-intro{
+  width: 100%;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}
+.hp-emp{
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+.hp-emp img{
+  border: 1px solid rgb(189, 197, 210);
+  border-radius: 0.5rem;
+}
+.customer-intro .card-head{
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  letter-spacing: -.05em;
+}
+.customer-content{
+  display: grid;
+  gap: 24px;
+}
+.customer-content .card-des-container{
+  display: grid;
+  gap: 8px;
+}
+.customer-content .card-head{
+  font-size: 1rem;
+  margin-top: 14px;
+}
+.card-links{
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.git-dev-container{
+  display: flex;
+  flex-flow: row;
+}
+/* .customer-content .card-hed{
+  margin: 0
+  
+} */
+/* .customer-card{
+  width: 100%;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  text-size-adjust: 100%;
+} */
+
+/*  */
+
+.arrow-button div{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: cente;
+  font-family: 'Icons';
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #004275;
+  border: 2px solid #004275;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
 
