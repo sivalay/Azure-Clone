@@ -953,22 +953,30 @@ body,p,a,ul,li{
   background-size: cover;
   box-sizing: border-box;
 }
+/* heigth-fixed-for net-content */
 .customer-container .site-component-container{
+  height: 1085.93px;
   padding: 48px 0px;
 }
 #customer-card{
+  gap: 24px;
   margin-top: 24px;
   padding: 3px 7px;
 }
 #customer-card .card-image-container{
   height: auto;
   object-fit: cover;
+  box-sizing: border-box;
 }
+/* image-heigth-pending */
 #customer-card .card-image-container img{
   height: 100%;
-  min-height: 219.422px;
+  /* min-height: 219.422px; */
+  display: flex;
+  flex-wrap: wrap;
   object-fit: cover;
   aspect-ratio: initial;
+  box-sizing: border-box;
 }
 #customer-card .card-content{
   display: grid;
@@ -981,16 +989,19 @@ body,p,a,ul,li{
   box-sizing: border-box;
 }
 .hp-emp{
-  height: auto;
+  height: 76px;
   display: flex;
   justify-content: flex-start;
 }
 .hp-emp img{
+  height: auto;
+  width: 171px;
   border: 1px solid rgb(189, 197, 210);
   border-radius: 0.5rem;
 }
 .customer-intro .card-head{
   margin: 0;
+  color: #17253D;
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.75rem;
@@ -1008,16 +1019,163 @@ body,p,a,ul,li{
   font-size: 1rem;
   margin-top: 14px;
 }
+/* image-heigth-pending */
 .card-links{
   display: flex;
+  gap: 0.5rem;
   flex-flow: column;
   justify-content: flex-start;
   gap: 8px;
 }
 .git-dev-container{
   display: flex;
+  flex-basis: auto;
+  gap: 0.75rem;
   flex-flow: row;
 }
+.git-dev-container img{
+  font-size: 1.25rem;
+  /* margin-top: 7px;   */
+}
+.card-links #cardlinks{
+  /* height: 20px; */
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  text-wrap-mode: nowrap;
+}
+.card-links #cardlinks a{
+  color: #0067b8;
+  font-weight: 600;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.48px;
+  text-decoration: underline #0067b8;
+}
+#customer-card .arrow-button{
+  margin-top: 10px;
+}
+#customer-card .arrow-button div{
+  height: 50px;
+  width: 50px;
+}
+
+/* Section-NextStep */
+
+.next-step-container{
+  width: 100%;
+  display: block;
+  background-image: url(assets/images/next-step-bg.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+#next-step-container .component-head-container{
+  width: 100%;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+}
+#next-step-container .component-head{
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+  letter-spacing: -0.05em;
+  text-align: center;
+}
+#next-step-card{
+  padding: 0px 8px;
+  margin-top: 24px;
+}
+#next-step-card .card-head{
+  margin-top: 0;
+}
+/* Section-Mobile */
+
+.Azure-mobile-app-container{
+  width: 100%;
+  height: auto;
+  display: block;
+  box-sizing: border-box;
+}
+.mobile-app-container{
+  width: 100%;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+.app-text-image-container{
+  width: 100%;
+  height: fit-content;
+  padding: 8px 12px;
+  box-sizing: border-box;
+}
+.app-text-container{
+  width: fit-content;
+  display: flex;
+  flex-flow: row;
+  gap: 8px;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.3px;
+  border: 2px;
+  border-radius: 3px;
+  padding: 12px 12px 9px;
+  margin: 0px 0px 8px -8px;
+  background-color: #e6e6e6;
+  box-sizing: border-box;
+} 
+.app-icon img{
+  margin: 3px 0 0 2px;
+}
+.app-text{
+  margin-top: -4px;
+  margin-right: 1px;
+}
+.app-image-container{
+  display: flex;
+  flex-flow: row;
+  gap: 24px;
+  margin-left: 12px;
+  padding-top: 2px;  
+}
+.app-image-container div img{
+  height: 24px;
+  width: 24px;
+}
+.app-image-container .appim{
+  margin-left: -1px;
+}
+
+
+/* .arrow-button{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Icons';
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #004275;
+  border: 2px solid;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+} */
+/* .global-container{
+  width: 100%;
+  display: block;
+  background-position: center;
+  background-position: center;
+  object-fit: cove;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #004275;
+} */
+
 /* .customer-content .card-hed{
   margin: 0
   
@@ -1031,22 +1189,5 @@ body,p,a,ul,li{
 } */
 
 /*  */
-
-.arrow-button div{
-  height: 40px;
-  width: 40px;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: cente;
-  font-family: 'Icons';
-  font-weight: 600;
-  font-size: 1.125rem;
-  color: #004275;
-  border: 2px solid #004275;
-  border-radius: 50%;
-  box-sizing: border-box;
-  cursor: pointer;
-}
 
 
