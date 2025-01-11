@@ -1013,13 +1013,15 @@ body,p,a,ul,li{
   aspect-ratio: initial;
   box-sizing: border-box;
 }
-/* #customer-card .card-container{
+/*  */
+#customer-card .card-container{
   display: block;
   flex: 0 0 100%;
   max-width: 100%;
   position: relative;
   box-sizing: border-box;
-} */
+}
+/*  */
 #customer-card .card-content{
   display: grid;
   gap: 24px;
