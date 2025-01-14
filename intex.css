@@ -964,6 +964,7 @@ body,p,a,ul,li{
 }
 #resource-card{
   margin-top: 24px;
+  box-shadow: none;
   background: rgb(255, 255, 255, 0.1);
 }
 #resource-card .card-image-container{
@@ -1084,10 +1085,12 @@ body,p,a,ul,li{
   justify-content: flex-start;
 }
 .hp-emp img{
-  height: auto;
+  height: 73px;
+  width: 172px;
   border: 1px solid rgb(189, 197, 210);
   border-radius: 0.5rem;
 }
+
 .customer-intro .card-head{
   margin: 0;
   color: #17253D;
@@ -1097,6 +1100,7 @@ body,p,a,ul,li{
   letter-spacing: -.05em;
 }
 .customer-content{
+  height: 100%;
   display: flex;
   flex-flow: column;
   justify-content: flex-end;
@@ -1104,6 +1108,7 @@ body,p,a,ul,li{
   box-sizing: border-box;
 }
 .customer-content .card-des-container{
+  height: 100%;
   display: grid;
   gap: 8px;
 }
@@ -1112,13 +1117,6 @@ body,p,a,ul,li{
   text-align: left;
   margin-top: 0px;
 }
-/*  */
-.customer-content .card-head{
-  font-size: 1rem;
-  text-align: left;
-  margin-top: 0p;
-}
-/*  */
 /* image-height-pending */
 .card-links{
   display: flex;
@@ -1140,6 +1138,10 @@ body,p,a,ul,li{
   font-size: 1.25rem;
   align-items: center;
   text-wrap-mode: nowrap;
+}
+.card-links #cardlinks img{
+  height: 20px;
+  width: 16px;
 }
 .card-links #cardlinks div{
   height: 20px;
@@ -1377,3 +1379,21 @@ footer{
   color: #616161;
 }
 
+/* .menu{
+  width: 20px;
+  height: 20px;
+  line-height: 15px;
+  display: inline-block;
+  margin-top: 10px;
+  text-align: center;
+  white-space: nowrap;
+  text-wrap-mode: nowrap;
+  box-sizing: border-box;
+} */
+/* .choice-container{
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  margin: 6px 0px 16px;
+  padding: 4px 24px 0px 0px;
+} */
