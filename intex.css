@@ -1081,14 +1081,17 @@ body,p,a,ul,li{
   box-sizing: border-box;
 }
 .hp-emp{
+  height: 77px;
   display: flex;
   justify-content: flex-start;
 }
 .hp-emp img{
-  height: 73px;
-  width: 172px;
+  /* height: 75px;
+  width: 174px; */
   border: 1px solid rgb(189, 197, 210);
   border-radius: 0.5rem;
+  object-fit: cover;
+  box-sizing: border-box;
 }
 
 .customer-intro .card-head{
@@ -1121,8 +1124,10 @@ body,p,a,ul,li{
 .card-links{
   display: flex;
   gap: 0.75rem;
-  flex-flow: column;
+  flex-flow: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
+  box-sizing: border-box;
 }
 .git-dev-container{
   display: flex;
@@ -1379,11 +1384,3 @@ footer{
   color: #616161;
 }
 
-/* .card-links #cardlinks a{
-  color: #0067b8;
-  font-weight: 600;
-  font-size: .875rem;
-  line-height: 1.25rem;
-  align-items: center;
-  text-wrap-mode: nowrap;
-} */
