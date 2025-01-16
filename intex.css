@@ -1379,21 +1379,11 @@ footer{
   color: #616161;
 }
 
-/* .menu{
-  width: 20px;
-  height: 20px;
-  line-height: 15px;
-  display: inline-block;
-  margin-top: 10px;
-  text-align: center;
-  white-space: nowrap;
-  text-wrap-mode: nowrap;
-  box-sizing: border-box;
-} */
-/* .choice-container{
-  width: 100%;
-  display: inline-flex;
+/* .card-links #cardlinks a{
+  color: #0067b8;
+  font-weight: 600;
+  font-size: .875rem;
+  line-height: 1.25rem;
   align-items: center;
-  margin: 6px 0px 16px;
-  padding: 4px 24px 0px 0px;
+  text-wrap-mode: nowrap;
 } */
