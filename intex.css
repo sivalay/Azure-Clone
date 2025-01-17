@@ -159,7 +159,8 @@ body,p,a,ul,li{
   letter-spacing: -.03em;
   margin: 1px 0px 0px 1px;
 }
-/* Section-Main */
+
+/* _____Section-Main_____ */
 .main-container{
   top: 0;
   width: 100%;
@@ -326,7 +327,8 @@ body,p,a,ul,li{
   width: 100%;
   background-color: #004275;
 }
-/* Section-Discover */
+
+/* _____Section-Discover_____ */
 .site-discover-container{
   width: 100%;
   height: auto;
@@ -472,8 +474,8 @@ body,p,a,ul,li{
   box-sizing: border-box;
   padding-bottom: 2px;
 }
-/* Section-Find */
 
+/* _____Section-Find_____ */
 .site-find-container{
   width: 100%;
   display: block;
@@ -525,15 +527,22 @@ body,p,a,ul,li{
   background-color: #005597;
   color: #ffffff;
 }
-.pill-bar-nxtbtn{
+.pill-next-container{
   right: 16px;
+  width: 20vw;
+  display: flex;
+  position: absolute;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background: linear-gradient(270deg, #f4fafd 30%, rgba(242, 242, 242, 0) 100%);
+  box-sizing: border-box;
+}
+.pill-bar-nxtbtn{
   width: 40px;
   height: 40px;
   display: block;
-  position: absolute;
   border: 2px solid #004275;
   border-radius: 50%;
-  background: linear-gradient(270deg, #f4fafd,#f4fafd,#f4fafd,#f4fafd 60%, rgba(242, 242, 242, 0) 100%);
   text-align: center;
   box-sizing: border-box;
 }
@@ -545,7 +554,6 @@ body,p,a,ul,li{
   font-weight: 400;
   font-size: 1.125rem;
   font-family: 'Icons';
-  
 }
 .solution-drop-down-container{
   width: 100%;
@@ -683,8 +691,8 @@ body,p,a,ul,li{
   line-height: 1;
   color: #fff;
 }
-/* Section-Product */
 
+/* Section-Product */
 .site-products-container{
   width: 100%;
   background-color: #f4fafd;
@@ -697,7 +705,7 @@ body,p,a,ul,li{
   position: relative;
   padding-left: 4px;
 }
-.product-content .pill-bar-nxtbtn{
+.product-content .pill-next-container{
   top: 124px;
 }
 #products-card{
@@ -759,8 +767,8 @@ body,p,a,ul,li{
 #products-site-link{
   padding: 0px 4px;
 }
-/* Section-Gartner */
 
+/* Section-Gartner */
 .site-gartner-container{
   width: 100%;
   display: block;
@@ -797,8 +805,8 @@ body,p,a,ul,li{
 .gartner-des .component-head{
   margin-top: 4px;
 }
-/* Section-Resources */
 
+/* Section-Resources */
 .site-resources-container{
   width: 100%;
   display: block;
@@ -852,7 +860,6 @@ body,p,a,ul,li{
   object-fit: cover;
   box-sizing: border-box;
 }
-
 .resource-nav-container{
   width: 100%;
   position: relative;
@@ -1019,7 +1026,9 @@ body,p,a,ul,li{
   color: #0e1726;
   padding-bottom: 2px;
 }
+
 /* Section-Customer */
+
 .site-customer-container{
   width: 100%;
   display: block;
@@ -1114,13 +1123,15 @@ body,p,a,ul,li{
   height: 100%;
   display: grid;
   gap: 8px;
+  white-space: nowrap;
+  word-wrap: break-word;
+  box-sizing: border-box;
 }
 .customer-content .card-head{
   font-size: 1rem;
   text-align: left;
   margin-top: 0px;
 }
-/* image-height-pending */
 .card-links{
   display: flex;
   gap: 0.75rem;
@@ -1223,6 +1234,7 @@ body,p,a,ul,li{
 #next-step-card .card-head{
   margin-top: 0;
 }
+
 /* Section-Mobile */
 
 .Azure-mobile-app-container{
@@ -1248,6 +1260,7 @@ body,p,a,ul,li{
   display: flex;
   flex-flow: row;
   gap: 8px;
+  flex-wrap: wrap;
   align-items: center;
   font-size: 15px;
   font-weight: 600;
@@ -1384,3 +1397,102 @@ footer{
   color: #616161;
 }
 
+
+
+@media screen and (min-width:452px) {
+  .customer-image .card-image-container img{
+    /* height: 297.74px; */
+    aspect-ratio: 5 / 4.0934;
+  }
+  /* .pill-next-container {
+    top: 92px;
+  } */
+  .product-content .pill-next-container{
+    top: 92px;
+  }
+}
+
+@media screen and (min-width:540px) {
+
+  /* Main-container */
+  .intro-content-container{
+    padding: 0px 64px;
+  }
+  .intro-button{
+    width: fit-content;
+    grid-auto-flow: column;
+    align-items: self-start;
+    justify-items: self-start;
+  }
+  .intro-button .btn_text{
+    width: fit-content;
+  }
+  .intro-button #btn1{
+    padding: 14px 14px 16px;
+  }
+
+  /* Section-Discover */
+  .component-container{
+    padding: 0px 64px;
+  }
+  .component-card-container{
+    padding-left: 0;
+  }
+  .card-des-container #discover-text{
+    padding-right: 24px;
+  }
+  .pill-next-container{
+    right: 64px;
+  }
+  /* Section-Product */
+  .product-content .pill-bar-container{
+    padding-left: 0px;
+  }
+  .product-content .pill-next-container{
+    top: 124px;
+  }
+  .crad-text-button .intro-button #btn1{
+    padding: 10px 14px 12px;
+  }
+  #products-site-link{
+    padding: 0px;
+  }
+  /* Section-Gartner */
+  #gartner-card .card-content{
+    padding: 16px 38px 16px 13px;
+  }
+  /* Section-Next */
+  #next-step-card{
+    padding: 0px 8px 0px 0px;
+  }
+  /* Section-Mobile */
+  .mobile-app-container{
+    padding: 24px 64px;
+  }
+  .app-text-container{
+    padding: 12px 12px 9px 12px;
+  }
+  /* Footer */
+  .footer-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-end-container li{
+    padding: 6px 4px 0px 6px;
+  }
+
+}
+@media screen and (min-width:541px) {
+  .drop-up-container{
+    justify-content: flex-start;
+  }
+  .pill-bar-nxtbtn span::after{
+    margin-top: 7px;
+  }
+  
+}
+@media screen and (min-width:548px) {
+  .product-content .pill-next-container{
+    top: 92px;
+  }
+}
