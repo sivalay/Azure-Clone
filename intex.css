@@ -152,12 +152,13 @@ body,p,a,ul,li{
   box-sizing: border-box;
 }
 .drop-down-container button i{
-  display: flex;
+  width: 12px;
   height: 12px;
+  display: flex;
   font-size: 13.01px;
   font-weight: 500;
   letter-spacing: -.03em;
-  margin: 1px 0px 0px 1px;
+  margin: 3px 0px 0px 1px;
 }
 
 /* _____Section-Main_____ */
@@ -654,6 +655,12 @@ body,p,a,ul,li{
   position: relative;
   box-sizing: border-box;
 }
+.video-img{
+  width: fit-content;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}
 .video-container .video-img img{
   width: 100%;
   display: block;
@@ -998,7 +1005,7 @@ body,p,a,ul,li{
   background-position: center;
   box-sizing: border-box;
 }
-.global-container .intro-content{
+#glob-intro{
   padding: 0px 16px;
   margin: 0;
 }
@@ -1384,13 +1391,21 @@ footer{
 .health-privacy-container{
   padding: 4px 24px 0px 0px;
 }
+.end-container{
+  display: block;
+  box-sizing: border-box;
+}
 .footer-end-container{
   display: block;
+  /* flex-flow: wrap; */
   margin: 12px 0px 3px;
+  /* white-space: nowrap; */
+  box-sizing: border-box;
 }
 .footer-end-container li{
   /* width: fit-content; */
   display: inline-block;
+  white-space: nowrap;
   padding: 6px 10px 0px 0px;
 }
 .footer-end-container li a{
@@ -1409,6 +1424,24 @@ footer{
   } */
   .product-content .pill-next-container{
     top: 92px;
+  }
+}
+
+@media screen and (min-width:475px) {
+  .app-text-image-container{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  .app-image-container{
+    height: fit-content;
+    margin-top: -1px;
+  }
+  .app-image-container .appim1{
+    margin-left: -1px;
+  }
+  .app-image-container .appim{
+    margin: 0;
   }
 }
 
@@ -1461,6 +1494,15 @@ footer{
   #gartner-card .card-content{
     padding: 16px 38px 16px 13px;
   }
+  /* Sectoin-Global */
+  #glob-intro{
+    padding: 0px 64px;
+  }
+  #glob-intro .intro-button-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
   /* Section-Next */
   #next-step-card{
     padding: 0px 8px 0px 0px;
@@ -1494,5 +1536,42 @@ footer{
 @media screen and (min-width:548px) {
   .product-content .pill-next-container{
     top: 92px;
+  }
+}
+@media screen and (min-width:610px) {
+  .pill-bar-nxtbtn span::after{
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width:768px) {
+  /* Section-Next */
+  #next-step-card .site-link{
+    margin-top: -1px;
+  }
+  /* Section-Mobile */
+  .app-text{
+    margin-top: -2px;
+  }
+  .app-image-container{
+    margin-top: 0px;
+  }
+  /* Footer */
+  .footer-end-container{
+    margin-top: 3px;
+  }
+  .footer-end-container li{
+    padding: 0px 24px 4px 0px;
+  }
+  
+}
+@media screen and (min-width:830px) {
+  .footer-end-container{
+    text-align: right;
+  }
+}
+@media screen and (min-width:815px) {
+  /* Section-Find */
+  #solution-card .pill-next-container{
+    display: none;
   }
 }
