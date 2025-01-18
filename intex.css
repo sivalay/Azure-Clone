@@ -32,100 +32,103 @@
 /* __reset__ */
 
 body,p,a,ul,li{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
 .main-wrap{
-    width: 100%;
-    height: auto;
-    font-family: 'Segoe UI';
+  width: 100%;
+  height: auto;
+  font-family: 'Segoe UI';
 }
+/* _____Seciton-Nav_____ */
+
 .nav-container{
-    /* height: 48px; */
-    width: 100%;
-    display: flex;
-    padding: 2px 0px;
-    position: relative;
-    /* border-bottom: 1px solid #dddddd; */
-    align-items: center;
+  /* height: 48px; */
+  width: 100%;
+  display: flex;
+  padding: 2px 0px;
+  position: relative;
+  /* border-bottom: 1px solid #dddddd; */
+  align-items: center;
+  box-sizing: border-box;
 }
 .menu-container{
-    width: 48px;
-    height: 32px;
-    margin: 1px;
-    display: block;
-    font-family: 'Icons';
-    font-size: 20px;
-    line-height: 15px;
-    padding: 8px 0px 8px 0px;
-    text-align: center;
-    cursor: pointer;
+  width: 48px;
+  height: 32px;
+  margin: 1px;
+  display: block;
+  font-family: 'Icons';
+  font-size: 20px;
+  line-height: 15px;
+  padding: 8px 0px 8px 0px;
+  text-align: center;
+  cursor: pointer;
 }
- .menu-container i{
-    margin-top: 8px;
- }
- .MScontainer{
-    display: flex;
-    flex: 1 0 auto;
-    float: right;
-    margin-top: 2px;
- }
- .searchlogo-container{
-    height: fit-content;
-    display: flex;
-    /* flex: 0 1 auto; */
-    text-align: center;
-    overflow-x: visible;
-    padding: 4px 8px 8px 0px;
-    margin: 2px 10px 1px 9px;
-    cursor: pointer;
- }
- .logo-container{
-    height: auto;
-    display: block;
-    /* flex: 1; */
-    position: absolute;
-    left: calc(50% - 60px);
-    margin: -1px 0px 1px 0px;
-    padding: 0px 4px 10px 5px;
-    cursor: pointer;
- }
- .logo-container img{
-    width: 108px;
-    height: auto;
- }
- .line{
-    height: 1px;
-    width: auto;
-    display: block;
-    position: relative;
-    background-color: #dddddd;
-    margin-top: -1px;
- }
- .drop-down-container{
-    height: 33px;
-    display: flex;
-    position: relative;
-    align-items: center;
-    border-bottom: 1px solid rgb(230, 230, 230);
- }
+.menu-container i{
+  margin-top: 8px;
+}
+.MScontainer{
+  display: flex;
+  flex: 1 0 auto;
+  float: right;
+  margin-top: 2px;
+}
+.searchlogo-container{
+  height: fit-content;
+  display: flex;
+  /* flex: 0 1 auto; */
+  text-align: center;
+  overflow-x: visible;
+  padding: 4px 8px 8px 0px;
+  margin: 2px 10px 1px 9px;
+  cursor: pointer;
+}
+.logo-container{
+  height: auto;
+  display: block;
+  /* flex: 1; */
+  position: absolute;
+  left: calc(50% - 60px);
+  margin: -1px 0px 1px 0px;
+  padding: 0px 4px 10px 5px;
+  cursor: pointer;
+}
+.logo-container img{
+  width: 108px;
+  height: auto;
+}
+.line{
+  height: 1px;
+  width: auto;
+  display: block;
+  position: relative;
+  background-color: #dddddd;
+  margin-top: -1px;
+}
+.drop-down-container{
+  height: 33px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
 .drop-down-container button{
-    /* height: 100%; */
-    /* height: 33px; */
-    display: flex !important;
-    gap: 10px;
-    position: relative;
-    font-family: 'Segoe UI';
-    font-size: 15px;
-    font-weight: 600;
-    background-color: transparent;
-    align-items: center;
-    white-space: nowrap;
-    border: none;
-    padding: 0px 16px;
-    cursor: pointer;
+  /* height: 100%; */
+  /* height: 33px; */
+  display: flex !important;
+  gap: 10px;
+  position: relative;
+  font-family: 'Segoe UI';
+  font-size: 15px;
+  font-weight: 600;
+  background-color: transparent;
+  align-items: center;
+  white-space: nowrap;
+  border: none;
+  padding: 0px 16px;
+  cursor: pointer;
 }
 /* .drop-down-text::after{
   content: "";
@@ -1573,5 +1576,34 @@ footer{
   /* Section-Find */
   #solution-card .pill-next-container{
     display: none;
+  }
+}
+@media screen and (min-width:860px) {
+  /* Section-Nav */
+  /* .main-nav-container{
+    height: 54px;
+  } */
+  .nav-container{
+    height: 54px;
+    padding: 0px 24px;
+    margin: 0px 0px 2px;
+  }
+  .menu-container{
+    display: none;
+  }
+  .MScontainer{
+    justify-content: right;
+  }
+  .searchlogo-container{
+    /* padding: 15px 9px 30px; */
+    margin: 0px 6px 1px;
+  }
+  .drop-down-container{
+    display: none;
+  }
+  .logo-container{
+    top: 0;
+    left: 24px;
+    padding: 15px 4px 16px 10px;
   }
 }
