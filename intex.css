@@ -163,8 +163,8 @@ body,p,a,ul,li{
   letter-spacing: -.03em;
   margin: 3px 0px 0px 1px;
 }
-
 /* _____Section-Main_____ */
+
 .main-container{
   top: 0;
   width: 100%;
@@ -331,8 +331,8 @@ body,p,a,ul,li{
   width: 100%;
   background-color: #004275;
 }
-
 /* _____Section-Discover_____ */
+
 .site-discover-container{
   width: 100%;
   height: auto;
@@ -478,8 +478,8 @@ body,p,a,ul,li{
   box-sizing: border-box;
   padding-bottom: 2px;
 }
-
 /* _____Section-Find_____ */
+
 .site-find-container{
   width: 100%;
   display: block;
@@ -701,8 +701,8 @@ body,p,a,ul,li{
   line-height: 1;
   color: #fff;
 }
-
 /* Section-Product */
+
 .site-products-container{
   width: 100%;
   background-color: #f4fafd;
@@ -815,8 +815,8 @@ body,p,a,ul,li{
 .gartner-des .component-head{
   margin-top: 4px;
 }
-
 /* Section-Resources */
+
 .site-resources-container{
   width: 100%;
   display: block;
@@ -990,8 +990,8 @@ body,p,a,ul,li{
 #resource-card img{
   aspect-ratio: 1.77778;
 }
-
 /* Section-Global */
+
 .site-global-container{
   width: 100%;
   display: block;
@@ -1579,10 +1579,8 @@ footer{
   }
 }
 @media screen and (min-width:860px) {
+  
   /* Section-Nav */
-  /* .main-nav-container{
-    height: 54px;
-  } */
   .nav-container{
     height: 54px;
     padding: 0px 24px;
