@@ -31,7 +31,7 @@
 
 /* __reset__ */
 
-body,p,a,ul,li{
+body,p,a,ul,li,button{
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -243,6 +243,7 @@ body,p,a,ul,li{
   letter-spacing: -0.03em;
   color: #17253D;
 }
+
 .intro-button-container{
   margin-top: 1.5rem;
   box-sizing: border-box;
@@ -258,7 +259,7 @@ body,p,a,ul,li{
   font-weight: 600;
   line-height: 1.375rem;
   letter-spacing: -0.02em;
-  padding: 12px;
+  /* padding: 12px; */
   border-radius: 8px;
   text-align: center;
   box-sizing: border-box;
@@ -267,14 +268,19 @@ body,p,a,ul,li{
   background-color: #0078D4;
   color: #ffffff;
   box-sizing: border-box;
-  padding: 14px 12px 16px 12px;
+  padding: 14px 12px 16px;
   cursor: pointer;
 }
 .intro-button #btn2{
   color: #004275;
   border: 2px solid #222222;
-  padding-bottom: 14px;
+  padding: 12px 12px 14px;
+  /* padding-bottom: 14px; */
   cursor: pointer;
+}
+/* site-content */
+.AI-container{
+  display: none;
 }
 .site-content-container{
   width: 100%;
@@ -1606,8 +1612,6 @@ footer{
     padding: 15px 4px 16px 10px;
 
   }
-
-
   .Azure-container{
     height: 100%;
     display: flex;
@@ -1672,6 +1676,9 @@ footer{
     background: transparent;
     padding: 0px 56px;
   }
+  .main-image-container{
+    height: 672px;
+  }
   .image-container{
     height: 100%;
   }
@@ -1680,9 +1687,133 @@ footer{
     grid-template-columns: repeat(2, 1fr);
   }
   .intro-highlight{
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
   .intro-heading h1{
     font-size: 40px;
+    line-height: 48px;
   }
+  .intro-paragraph{
+    margin-top: 24px;
+    padding-right: 48px;
+  }
+  .intro-button-container{
+    margin-top: 32px;
+  }
+  .intro-button #btn1{
+    padding: 14px 18px 16px;
+  }
+  .intro-button #btn2{
+    padding: 12px 16px 14px;
+  }
+  /* AI-chat */
+  .AI-container{
+    height: 100%;
+    width: 100%;
+    display: block;
+    color: #f4fafd;
+    background: linear-gradient(180deg, #002948 0%, #004275 98.96%);
+  }
+  .AI-container .site-component-container{
+    padding: 32px 0px;
+  }
+  .AI-container .component-container{
+    padding: 0px 56px;
+  }
+  .AI-component-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+  .AI-des-container{
+    width: 100%;
+    display: block;
+    padding-top: 27px;
+    padding: 27px 12px 25px 0px;
+    box-sizing: border-box;
+  }
+  .AI-des-container .component-head-container{
+    margin-top: 1px;
+    gap: 0.25rem;
+    /* padding: 12px 12px 12px 0px; */
+  }
+  .AI-des-container .card-text{
+    color: #DCEEF8;
+    font-size: 14px;
+    line-height: 1.25rem;
+    letter-spacing: -0.03em;
+  }
+  .AI-chat-container{
+    display: flex;
+    flex-flow: column;
+    gap: .625rem;
+    box-sizing: border-box;
+  }
+  .AI-chat-box{
+    height: auto;
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    border-radius: .5rem;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .AI-ask{
+    display: inline-block;
+    padding: 21px 16px 22px;
+  }
+  .AI-ask input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Segoe UI';
+    letter-spacing: normal;
+    padding: 0;
+    background: transparent;
+  }
+  .AI-chat-box button{
+    height: 52px;
+    width: 52px;
+    display: block;
+    padding: 14px;
+    border: 2px solid transparent;
+    /* background: transparent; */
+  }
+  .divider{
+    bottom: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: .25rem;
+    background-color: #0078D4;
+    background: linear-gradient(90deg, #0a86c4 .3%, #71ede8 100%);
+  }
+  .AI-quest-container{
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+  }
+  .AI-quest button{
+    display: block;
+    padding: 8px 10px;
+    border-radius: .5rem;
+    color: #fff;
+    font-family: 'Segoe UI';
+    font-size: 0.875rem;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    border: .0625rem solid #8dc8e8;
+    background-color: transparent;
+  }
+  /* Section-Feature */
+  #featured-for-mob{
+    display: none;
+  }
+  
 }
