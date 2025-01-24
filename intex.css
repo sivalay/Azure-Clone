@@ -99,6 +99,9 @@ body,p,a,ul,li,button{
   width: 108px;
   height: auto;
 }
+.Azure-container, .nav-drop-container{
+  display: none;
+}
 .line{
   height: 1px;
   width: auto;
@@ -493,6 +496,7 @@ body,p,a,ul,li,button{
   box-sizing: border-box;
   padding-bottom: 2px;
 }
+
 /* _____Section-Find_____ */
 
 .site-find-container{
@@ -716,6 +720,7 @@ body,p,a,ul,li,button{
   line-height: 1;
   color: #fff;
 }
+
 /* Section-Product */
 
 .site-products-container{
@@ -1869,8 +1874,6 @@ footer{
   }
   .next-button-container .btn_text{
     height: 66px;
-    /* align-content: center; */
-    /* white-space: wrap; */
   }
   .next-button-container .btn_text span{
     height: 100%;
@@ -1920,4 +1923,91 @@ footer{
   /* _____Section-Find_____ */
 
   
+  #solution-card{
+    gap: 2rem;
+    margin-top: 32px;
+    padding: 0px 8px 0px 0;
+  }
+  #solution-card .pill-next-container{
+    right: 60px;
+    display: flex;
+  }
+  .pill-bar .pill-btn{
+    padding: 9px 24px;
+  }
+  .solution-drop-container{
+    height: 100%;
+    display: flex;
+    max-height: 630px;
+    position: relative;
+  }
+  .solution-drop-down-container{
+    overflow-y: auto;
+    flex-basis: calc(33% - 1rem / 2);
+  }
+  .lapleft{
+    padding-left: 3rem;
+  }
+  .lap-left{
+    padding-left: 51px;
+  }
+  .drop-text-container{
+    display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .indicator2{
+    height: auto;
+    width: 8px;
+    display: block;
+    background-color: #004275;
+    box-sizing: border-box;
+  }
+  .drop-up-container{
+    box-sizing: border-box;
+    padding: 32px 0px;
+  }
+  .solution-text-video-container{
+    padding-bottom: 32px;
+    position: unset;
+    gap: 30px;
+  }
+  .video-container{
+    top: 0px;
+    right: 0px;
+    width: 60%;
+    height: auto;
+    position: absolute;
+  }
+  .video-container .video-img img{
+    border-radius: 1.5rem;
+  }
+  .video-top-link{
+    margin-bottom: 0px;
+  }
+  .video-top-link span{
+    margin-top: 0px;
+    padding-bottom: 2px;
+  }
+  /* _____Section-product_____ */
+  .product-content{
+    margin-top: 48px;
+  }
+  .product-content .pill-next-container{
+    top: 104px;
+    right: 60px;
+  }
+  #products-card{
+    margin-top: 48px;
+  }
+  #services-card{
+    grid-area: 1 / 1;
+    /* background-image: url(assets/images/products-bg2.avif); */
+  }
+  #products-card-content{
+    aspect-ratio: 21 / 9;
+   }
+  .blank-space{
+    height: 0px;
+  }
 }
