@@ -720,7 +720,6 @@ body,p,a,ul,li,button{
   line-height: 1;
   color: #fff;
 }
-
 /* Section-Product */
 
 .site-products-container{
@@ -739,6 +738,11 @@ body,p,a,ul,li,button{
   top: 124px;
 }
 #products-card{
+  gap: 0.75rem;
+}
+#products-card-2{
+  margin: 0;
+  padding: 0;
   gap: 0.75rem;
 }
 #services-card{
@@ -765,11 +769,11 @@ body,p,a,ul,li,button{
   color: #0e1726;
   padding-bottom: 24px;
 }
-.crad-text-button{
+.card-text-button{
   display: grid;
   gap: 0.75rem;
 }
-.crad-text-button .intro-button #btn1{
+.card-text-button .intro-button #btn1{
   padding: 10px 12px 12px;
 }
 .badge-container{
@@ -835,6 +839,7 @@ body,p,a,ul,li,button{
 .gartner-des .component-head{
   margin-top: 4px;
 }
+
 /* Section-Resources */
 
 .site-resources-container{
@@ -1010,6 +1015,7 @@ body,p,a,ul,li,button{
 #resource-card img{
   aspect-ratio: 1.77778;
 }
+
 /* Section-Global */
 
 .site-global-container{
@@ -1233,7 +1239,6 @@ body,p,a,ul,li,button{
 #customer-card .link-container{
   margin-left: -3px;
 }
-
 /* Section-NextStep */
 
 .next-step-container{
@@ -1507,7 +1512,7 @@ footer{
   .product-content .pill-next-container{
     top: 124px;
   }
-  .crad-text-button .intro-button #btn1{
+  .card-text-button .intro-button #btn1{
     padding: 10px 14px 12px;
   }
   #products-site-link{
@@ -1999,15 +2004,154 @@ footer{
   }
   #products-card{
     margin-top: 48px;
+    padding-right: 8px;
   }
   #services-card{
     grid-area: 1 / 1;
-    /* background-image: url(assets/images/products-bg2.avif); */
+    background-image: url(assets/images/products-bg2.avif);
   }
   #products-card-content{
+    grid-area: 1 / 1;
     aspect-ratio: 21 / 9;
    }
   .blank-space{
     height: 0px;
   }
+  .card-text-button{
+    gap: 1rem;
+  }
+  .card-text-button .intro-button #btn1{
+    padding: 10px 18px 12px;
+  }
+  #products-card{
+    gap: 1rem;
+  }
+  #products-card-2{
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* Section-Gartner */
+  .site-gartner .site-component-container{
+    padding: 96px 0px;
+  }
+  #gartner-container .component-card-container{
+    margin-top: 49px;
+    padding-right: 8px;
+  }
+  #gartner-card{
+    flex-flow: row-reverse;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    padding-bottom: 1px;
+  }
+  #gartner-card .card-image-container{
+    height: 100%;
+    padding: 8px 9px 8px 0px;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  #gartner-card .card-image-container img{
+    height: 100%;
+  }
+  #gartner-des-container{
+    gap: 6rem;
+    justify-content: space-around;
+  }
+  #gartner-card .card-content{
+    padding: 24px 56px 24px 17px;
+    box-sizing: border-box;
+  }
+  .gartner-des{
+    gap: 1rem;
+  }
+  /* Section- resources */
+  .site-resources-container .site-component-container{
+    padding-top: 72px;
+  }
+  #resources-container .component-head{
+    font-size: 30px;
+  }
+  .resource-nav-container{
+    margin-top: 24px;
+  }
+.nav-tab{
+  padding: 16px 24px 24px;
+}
+#navtab{
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.nav-tab span{
+  width: 172.33px;
+}
+.indicator{
+  left: 8px;
+  width: 220.33px;
+  border-bottom-left-radius: 1rem;
+}
+#resource-arrow{
+  top: 10px;
+  right: 52px;
+  margin: 0;
+  height: 64px;
+  width: 20vw;
+  align-items: center;
+  justify-content: right;
+  position: absolute;
+  /* background-color: red; */
+  background: linear-gradient(270deg, #f4fafd 25%, rgba(242, 242, 242, 0) 100%);
+}
+#resource-arrow .left-arrow{
+  display: none;
+}
+.resource-optimize-container{
+  padding: 32px 0px 72px;
+}
+.optimize-container{
+  gap: 1rem;
+  margin: auto;
+  width: calc(83.33333%);
+}#resource-card{
+  margin: auto;
+  width: 66.667%;
+  margin-top: 2rem;
+}
+#resource-card .card-image-container{
+  /* width: 66.667%;
+  margin: auto; */
+  padding: 1.5rem;
+  /* margin-top: 2rem; */
+}
+/* Section-next */
+#next-step-container .component-head{
+  font-size: 30px;
+}
+#next-step-card{
+  gap: 1rem;
+  margin-top: 32px;
+  padding-right: 16px;
+  grid-template-columns: repeat(3, 1fr);
+}
+#next-step-card .card-des-container{
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+/* Section-mobile */
+.mobile-app-container{
+  padding: 24px 56px;
+}
+.app-text-container{
+  padding: 12px 16px 9px;
+}
+.app-text{
+  margin-top: -4px;
+}
+/* footer */
+footer{
+  padding: 0px 0px 70px;
+}
+.app-text-container{
+  padding: 12px 16px 10px;
+}
 }
