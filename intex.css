@@ -2151,7 +2151,20 @@ footer{
 footer{
   padding: 0px 0px 70px;
 }
+
 .app-text-container{
   padding: 12px 16px 10px;
+}
+#resource-arrow{
+  top: 10px;
+  right: 52px;
+  margin: 0;
+  height: 64px;
+  width: 20vw;
+  align-items: center;
+  justify-content: right;
+  position: absolute;
+  /* background-color: red; */
+  background: linear-gradient(270deg, #f4fafd 25%, rgba(242, 242, 242, 0) 100%);
 }
 }
