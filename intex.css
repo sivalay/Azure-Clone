@@ -166,7 +166,6 @@ body,p,a,ul,li,button{
   letter-spacing: -.03em;
   margin: 3px 0px 0px 1px;
 }
-
 /* _____Section-Main_____ */
 
 .main-container{
@@ -424,6 +423,7 @@ body,p,a,ul,li,button{
   border-radius: 0.5rem;
   aspect-ratio: 2.33333;
 }
+
 .card-content{
   height: 100%;
   width: 100%;
@@ -1636,19 +1636,29 @@ footer{
     position: absolute;
     left: 146px;
     margin: 0 0 0 25px;
+    padding-right: 6px;
     align-items: center;
     justify-content: center;
   }
   .Azure-nav{
     display: block;
+    position: relative;
     margin-left: 18px;
     font-size: 18px;
     font-weight: 600;
     color: #262626;
     margin-top: -2px;
   }
+  .Azure-nav::before{
+    top: 1px;
+    left: -21px;
+    content: "";
+    height: 24px;
+    position: absolute;
+    border-left: 2px solid #000;
+  }
   .nav-drop-container{
-    left: 240px;
+    left: 245px;
     display: block;
     position: absolute;
     box-sizing: border-box;
@@ -1665,13 +1675,20 @@ footer{
     font-weight: 400;
     line-height: normal;
     letter-spacing: normal;
-    padding: 15px 30px 16px 7px;
+    padding: 16px 30px 17px 15px;
+    border: 1px solid transparent;
   }
   #dropdowns1{
-    padding: 15px 6px 15px 13px;
-    margin-right: 13px;
+    padding: 16px 8px 17px 7px;
   }
-  #dropdowns span::after{
+  #dropdownss{
+    margin: 0px 1px 0px 1px;
+  }
+  #dropdowns{
+    /* margin-right: -10px; */
+    margin-left: -10px;
+  }
+  .drop-downs span::after{
     right: 16px;
     height: 9px;
     width: 8px;
@@ -1683,19 +1700,43 @@ footer{
     color: currentcolo;  
     padding-top: 6px;  
   }
+  #dropdowns1 span::after{
+    display: none;
+  }
 
   /* main-content */
   .main-intro-container{
     padding: 0;
+  }
+  .drop-downns span::after{
+    right: 16px;
+    height: 9px;
+    width: 8px;
+    content: "";
+    font-family: 'Icons';
+    font-size: 10px;
+    font-weight: 700;
+    position: absolute;
+    color: currentcolo;  
+    padding-top: 30px;  
+  }
+  .intro-container{
+    height: 672px;
+    display: block;
+    position: relative;
+  }
+  .main-image-container{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
   }
   .intro-content-container{
     top: 64px;
     position: absolute;
     background: transparent;
     padding: 0px 56px;
-  }
-  .main-image-container{
-    height: 672px;
   }
   .image-container{
     height: 100%;
@@ -1800,7 +1841,18 @@ footer{
     display: block;
     padding: 14px;
     border: 2px solid transparent;
-    /* background: transparent; */
+    background: transparent;
+  }
+  .AI-chat-box button div svg{
+    width: 23.99px;
+    height: auto;
+    fill: #004275;
+    margin: -3px 0px 0px -2px;
+    opacity: 0.2;
+    cursor: default;
+  }
+  .AI-chat-box button div svg path{
+    d: path("M5.69362 11.9997L2.29933 3.2715C2.0631 2.66403 2.65544 2.08309 3.2414 2.28959L3.33375 2.32885L21.3337 11.3288C21.852 11.588 21.8844 12.2975 21.4309 12.6129L21.3337 12.6705L3.33375 21.6705C2.75077 21.962 2.11746 21.426 2.2688 20.8234L2.29933 20.7278L5.69362 11.9997L2.29933 3.2715L5.69362 11.9997ZM4.4021 4.54007L7.01109 11.2491L13.6387 11.2497C14.0184 11.2497 14.3322 11.5318 14.3818 11.8979L14.3887 11.9997C14.3887 12.3794 14.1065 12.6932 13.7404 12.7428L13.6387 12.7497L7.01109 12.7491L4.4021 19.4593L19.3213 11.9997L4.4021 4.54007Z")
   }
   .divider{
     bottom: 0;
@@ -1829,7 +1881,7 @@ footer{
     border: .0625rem solid #8dc8e8;
     background-color: transparent;
   }
-  /* Section-Feature */
+  /* _____Section-Feature_____ */
   #featured-for-mob{
     display: none;
   }
@@ -1877,11 +1929,20 @@ footer{
     position: relative;
     right: 0;
   }
+  .next-button-container .intro-button{
+    display: flex;
+    width: fit-content;
+  }
   .next-button-container .btn_text{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1 1 auto; */
     height: 66px;
   }
   .next-button-container .btn_text span{
     height: 100%;
+    width: fit-content;
     display: block;
   }
   .next-button-container .pill-next-container{
@@ -1926,8 +1987,6 @@ footer{
     gap: 1rem;
   }
   /* _____Section-Find_____ */
-
-  
   #solution-card{
     gap: 2rem;
     margin-top: 32px;
@@ -2030,7 +2089,7 @@ footer{
     gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
   }
-  /* Section-Gartner */
+  /* _____Section-Gartner_____ */
   .site-gartner .site-component-container{
     padding: 96px 0px;
   }
@@ -2065,7 +2124,7 @@ footer{
   .gartner-des{
     gap: 1rem;
   }
-  /* Section- resources */
+  /* _____Section- resources_____ */
   .site-resources-container .site-component-container{
     padding-top: 72px;
   }
@@ -2117,13 +2176,18 @@ footer{
   width: 66.667%;
   margin-top: 2rem;
 }
+/* work-pending********* */
 #resource-card .card-image-container{
   /* width: 66.667%;
   margin: auto; */
   padding: 1.5rem;
   /* margin-top: 2rem; */
 }
-/* Section-next */
+/* _____Section-global_____ */
+.glob-des{
+  padding: 0px 48px;
+}
+/* _____Section-next_____ */
 #next-step-container .component-head{
   font-size: 30px;
 }
@@ -2137,7 +2201,7 @@ footer{
   padding-right: 24px;
   box-sizing: border-box;
 }
-/* Section-mobile */
+/* _____Section-mobile_____ */
 .mobile-app-container{
   padding: 24px 56px;
 }
@@ -2147,24 +2211,12 @@ footer{
 .app-text{
   margin-top: -4px;
 }
-/* footer */
+/* _____footer_____ */
 footer{
   padding: 0px 0px 70px;
 }
 
 .app-text-container{
   padding: 12px 16px 10px;
-}
-#resource-arrow{
-  top: 10px;
-  right: 52px;
-  margin: 0;
-  height: 64px;
-  width: 20vw;
-  align-items: center;
-  justify-content: right;
-  position: absolute;
-  /* background-color: red; */
-  background: linear-gradient(270deg, #f4fafd 25%, rgba(242, 242, 242, 0) 100%);
 }
 }
