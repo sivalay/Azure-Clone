@@ -31,11 +31,11 @@
                 <div class="nav-drop-container">
                     <div class="nav-drop">
                         <li><div class="drop-downs" id="dropdowns1"><span>Explore</span></div></li>
-                        <li><div class="drop-downs" id="dropdownss"><span>Products</span></div></li>
+                        <li><div class="drop-downs" id="dropdowns2"><span>Products</span></div></li>
                         <li><div class="drop-downs" id="dropdowns"><span>Solutions</span></div></li>
                         <li><div class="drop-downs" id="dropdowns"><span>Pricing</span></div></li>
                         <li><div class="drop-downs" id="dropdowns"><span>Partners</span></div></li>
-                        <li><div class="drop-downs" id="dropdowns"><span>Resources</span></div></li>
+                        <li><div class="drop-downs" id="dropdowns3"><span>Resources</span></div></li>
                     </div>
                 </div>
 
@@ -53,7 +53,14 @@
             <div class="main-intro-container">
                 <div class="intro-container">
                     <div class="main-image-container">
-                        <div class="image-container"><img src="assets/images/sec-main-img1.avif" alt="main-image"></div>
+                        <!-- <div class="image-container"><img src="assets/images/sec-main-img1.avif" alt="main-image"></div> -->
+                        <div class="image-container">
+                            <picture>
+                                <source src="assets/images/sec-main-img1.avif" media="(min-width:540px)">
+                                <source src="assets/images/sec-main-bg.avif" media="(min-width:860px)">
+                                <img src="assets/images/sec-main-img1.avif" alt="main-image">
+                            </picture>
+                        </div>
                     </div>
                     <div class="intro-content-container">
                         <div class="content-container">
@@ -83,12 +90,14 @@
                         <div class="site-component-container">
                             <div class="component-container">
                                 <div class="AI-component-container">
+                                    <div class="AI-des">
                                     <div class="AI-des-container">
                                         <div class="AI-icon"><img style="height: 32.88px; width: 40px;" src="assets/images/AI-icon-white.svg" alt="AI-msg"></div>
                                         <div class="component-head-container">
                                             <div class="component-head">AI-powered assistant</div>
                                             <div class="card-text">Need help finding a product or solution? Try the AI-powered assistant.</div>
                                         </div>
+                                    </div>
                                     </div>
                                     <div class="AI-chat-container">
                                         <div class="AI-chat-box">
@@ -221,13 +230,11 @@
                                             <div class="pill-bar-nxtbtn"><span></span></div>
                                         </div>
                                         <div class="solution-drop-container"><div class="solution-drop-down-container">
-                                            <!-- <div class="indicator2"></div> -->
                                             <div class="drop-text-container"><div class="indicator2"></div><div class="lapleft">
                                             <div class="drop-up-container" id="dp-up-cr">
                                                 <div class="up-text"><h3>AI</h3></div>
                                                 <div class="up-button" id="dropup"></div>
                                             </div>
-                                            <!-- <div class="indicator2"></div> -->
                                             <div class="solution-text-video-container">
                                                 <div class="solution-text"> Build intelligent apps at enterprise scale with the Azure AI portfolio. </div>
                                                 <div class="solution-vedio">
@@ -237,7 +244,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- <div class="indicator2"></div> -->
                                             </div>
                                             </div>
                                             <div class="lap-left">
