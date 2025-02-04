@@ -1674,20 +1674,33 @@ footer{
   .drop-down-container{
     display: none;
   }
+  .lap-nav-drop-container{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+
+  }
   .logo-container{
     top: 0;
     left: 24px;
+    /* left: 5%; */
+    display: flex;
+    padding: 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  .logo-container .azure-logo{
     padding: 15px 4px 16px 10px;
   }
   .Azure-container{
     height: 100%;
     display: flex;
-    position: absolute;
-    left: 146px;
+    /* position: absolute; */
+    /* left: 146px; */
     margin: 0 0 0 25px;
-    padding-right: 6px;
+    padding: 17px 6px 15px 0px;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
   }
   .Azure-nav{
     display: block;
@@ -1707,10 +1720,10 @@ footer{
     border-left: 2px solid #000;
   }
   .nav-drop-container{
-    left: 242px;
+    /* left: 242px; */
     height: 54px;
     display: block;
-    position: absolute;
+    /* position: absolute; */
     padding: 0 1px 0 2px;
     box-sizing: border-box;
   }
@@ -1729,6 +1742,11 @@ footer{
     padding: 16px 30px 16px 12px;
     margin: 1px 0px 0px -10px;
     border: 1px solid transparent;
+  }
+  .drop-downs span{
+    height: 20px;
+    display: block;
+    margin-top: 1px;
   }
   #dropdowns1{
     margin-left: 0px;
@@ -2419,15 +2437,21 @@ footer{
 }
 @media screen and (min-width:1084px) {
   /* header */
+  /* .main-wrap{
+    display: block;
+    margin-right: -3.59375px;
+    box-sizing: border-box;
+  } */
   .nav-container{
-    padding: 0px 54.1875px;
+    padding: 0px 5%;
   }
   .searchlogo-container{
     padding: 15px 9px 15px 9px;
     margin: 4px 6px 1px;
   }
   .logo-container{
-    left: 54.1875px;
+    /* left: 54.1875px; */
+    left: 5%;
   }
   .Azure-container{
     /* left: 175.1875px; */
