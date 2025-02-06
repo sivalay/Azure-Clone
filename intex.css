@@ -85,6 +85,9 @@ body,p,a,ul,li,button{
   margin: 2px 10px 1px 9px;
   cursor: pointer;
 }
+.search-text{
+  display: none;
+}
 .logo-container{
   height: auto;
   display: block;
@@ -738,6 +741,7 @@ body,p,a,ul,li,button{
   background-color: #0078D4;
   box-sizing: border-box;
 }
+
 /* Section-Product */
 
 .site-products-container{
@@ -1348,12 +1352,12 @@ body,p,a,ul,li,button{
   height: auto;
   display: block;
   box-sizing: border-box;
+  background-color: #f7f7f7;
 }
 .mobile-app-container{
   width: 100%;
   padding: 24px 16px;
   box-sizing: border-box;
-  background-color: #f7f7f7;
 }
 .app-text-image-container{
   width: 100%;
@@ -1739,7 +1743,7 @@ footer{
     line-height: normal;
     letter-spacing: normal;
     padding: 16px 30px 16px 12px;
-    margin: 1px 0px 0px -10px;
+    margin: 1px 0px 0px -8px;
     border: 1px solid transparent;
   }
   .drop-downs span{
@@ -1752,7 +1756,7 @@ footer{
     padding: 16px 8px 10px;
   }
   #dropdowns2{
-    margin-left: 4px;
+    margin-left: 3.5px;
   }
   #dropdowns7{
     display: none;
@@ -1789,7 +1793,7 @@ footer{
     bottom: 0px;
     position: absolute;
   }
-  .ruf{
+  .intro-cont{
     max-width: 100vw;
     top: 64px;
     position: absolute;
@@ -1873,7 +1877,7 @@ footer{
     display: block;
   }
   .AI-icon img{
-    margin-top: 1px;
+    margin-top: 2px;
   }
   .AI-des-container .component-head-container{
     margin-top: 1px;
@@ -1967,8 +1971,15 @@ footer{
     background-color: transparent;
   }
   /* _____Section-Feature_____ */
+
   #featured-for-mob{
     display: none;
+  }
+  .featured-div{
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    box-sizing: border-box;
   }
   #featured-for-lap{
     height: 66px;
@@ -1976,6 +1987,7 @@ footer{
     position: relative;
     padding: 0px 56px;
     align-items: center;
+    background-color: transparent;
     box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
   }
   .featured-container{
@@ -2148,6 +2160,7 @@ footer{
     right: 60px;
   }
   #products-card{
+    gap: 1rem;
     margin-top: 48px;
     padding-right: 8px;
   }
@@ -2167,9 +2180,6 @@ footer{
   }
   .card-text-button .intro-button #btn1{
     padding: 10px 18px 12px;
-  }
-  #products-card{
-    gap: 1rem;
   }
   #products-card-2{
     gap: 1rem;
@@ -2236,7 +2246,7 @@ footer{
   border-bottom-left-radius: 1rem;
 }
 #resource-arrow{
-  top: 10px;
+  top: 8px;
   right: 52px;
   margin: 0;
   height: 64px;
@@ -2257,7 +2267,8 @@ footer{
   gap: 1rem;
   margin: auto;
   width: calc(83.33333%);
-}#resource-card{
+}
+#resource-card{
   margin: auto;
   width: 66.667%;
   margin-top: 2rem;
@@ -2310,6 +2321,7 @@ footer{
   height: 100%;
   aspect-ratio: initial;
 }
+
 .carousel-main #customer-card2{
   padding-left: 0px;
 }
@@ -2323,9 +2335,11 @@ footer{
 }
 .carousel-container{
   display: flex;
-  margin-top: 28px;
+  margin-top: 32px;
   white-space: nowrap;
+  justify-content: center;
   box-sizing: border-box;
+  /* background-color: #fefefe; */
 }
 #carousel1{
   border-top-left-radius: 1rem;
@@ -2336,10 +2350,8 @@ footer{
   border-bottom-right-radius: 1rem;
 }
 .carousel-outer{
-  /* width: calc(1328px / 6); */
-  /* max-width: 200px; */
+  max-width: 200px;
   width: 100%;
-  height: 100%;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -2350,7 +2362,6 @@ footer{
   box-sizing: border-box;
 }
 .carousel-inner{
-  /* max-width: 200px; */
   width: 100%;
   height: 100%;
   display: flex;
@@ -2374,7 +2385,6 @@ footer{
   display: block;
   object-fit: cover;
   aspect-ratio: 7 / 3;
-  /* aspect-ratio: 2.33333; */
   box-sizing: border-box;
 }
 #crsl div img{
@@ -2385,9 +2395,10 @@ footer{
 }
 #customer-card2 .link-container{
   margin-top: 2rem;
+  margin-bottom: 0;
 }
-.carousel-outer .indicator{
-  left: 0px;
+#underline-white{
+  background-color: #fefefe;
 }
 /* _____Section-next_____ */
 #next-step-container .component-head{
@@ -2413,9 +2424,6 @@ footer{
 .app-images{
   margin-top: 7px;
 }
-/* .app-text{
-  margin-top: -4px;
-} */
 /* _____footer_____ */
 footer{
   padding: 0px 0px 70px;
@@ -2445,11 +2453,6 @@ footer{
 }
 @media screen and (min-width:1084px) {
   /* header */
-  /* .main-wrap{
-    display: block;
-    margin-right: -3.59375px;
-    box-sizing: border-box;
-  } */
   .nav-container{
     padding: 0px 5%;
   }
@@ -2458,15 +2461,12 @@ footer{
     margin: 4px 6px 1px;
   }
   .logo-container{
-    /* left: 54.1875px; */
     left: 5%;
   }
   .Azure-container{
-    /* left: 175.1875px; */
     left: 176px;
   }
   .nav-drop-container{
-    /* left: 271.1875px; */
     left: 272px;
   }
   .drop-downs{
@@ -2518,12 +2518,11 @@ footer{
     border-radius: 3px;
     border: 1px solid #000;
   }
-  /* .AI-container .component-container{
-    padding: 0px 52px 0px 56px;
-  } */
   #featured-for-lap{
     height: 56px;
-    /* padding: 0px 52px 0px 56px; */
+    width: 99.5%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .next-button-container{
     right: 56px;
@@ -2547,13 +2546,7 @@ footer{
     align-self: center;
     margin-right: auto;
     margin-left: auto;
-    /* padding: 0; */
   }
-  /* Section-Discover */
-   /* #feature-card{
-    padding-right: 5.09px;
-   } */
-  
   /* Section-Discover */
   .site-discover{
     background-image: url(assets/images/Discover-bg2.avif);
@@ -2571,6 +2564,19 @@ footer{
   .site-gartner{
     background-image: url(assets/images/Gartner-bg-2.avif);
   }
+  /* Section-Gartner */
+  #glob-intro, .mobile-app-container{
+    width: 99.5%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+  /* Section-Mobile */
+  /* .mobile-app-container{
+    width: 99.5%;
+    margin-left: auto;
+    margin-right: auto;
+  } */
   /* Footer */
   .footer-content{
     padding: 0 5%;
@@ -2615,7 +2621,109 @@ footer{
   #dropdowns3{
     display: inline-block;
   }
-  /* .intro-content-container{
-    margin: 0px ;
-  } */
+  .intro-contentt-container{
+    margin: 24px;
+  }
 }
+@media screen and (min-width:1440px) {
+  /* header */
+  
+  .drop-downs{
+    display: inline-block;
+    margin-left: -6px;
+  }
+  #dropdowns7{
+    display: none;
+  }
+  .searchlogo-container{
+    padding: 19px 14.1px 15px 9px;
+    margin: 0px 6px 1px;
+  }
+  .search-text{
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: normal;
+    margin: -2px 6px 0 0;
+  }
+  .intro-cont{
+    top: 62px;
+  }
+  .intro-content-container{
+    /* max-width: 1328px; */
+    /* width: 90%; */
+    width: 100%;
+    padding: 0px 5%;
+  }
+  .intro-content{
+    padding: 0px;
+  }
+  .intro-heading h1{
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .intro-paragraph{
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .AI-container .component-container{
+    width: 100%;
+    padding: 0 5%;
+  }
+  .component-container{
+    width: 100%;
+    padding: 0 5%;
+  }
+  .component-head{
+    font-size: 32px;
+    line-height: 40px;
+  }
+  #featured-for-lap{
+    width: 100%;
+    padding: 0 5%;
+  }
+  .card-des-container .card-head{
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .video-img{
+    width: 100%;
+  }
+  .drop-up-container .up-text h3{
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .indicator2{
+    width: 5px;
+  }
+  /* Section-product */
+  #products-card{
+    display: flex;
+    /* gap: 0px; */
+  }
+  #services-card{
+    display: flex;
+    flex: 0 0 24.069%;
+    max-width: 25%;
+  }
+  /* Section-resource */
+  #resources-container .component-head{
+    font-size: 40px;
+    line-height: 56px;
+  }
+  .optimize-container .card-head{
+    font-size: 24px;
+    line-height: 32px;
+  }
+  #resource-card{
+    width: 68.570%;
+  }
+
+  
+}
+/* @media screen and (min-width:1195px) {
+  .intro-cont{
+    top: 74px;
+  }
+} */
