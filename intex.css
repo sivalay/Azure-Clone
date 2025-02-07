@@ -950,6 +950,7 @@ body,p,a,ul,li,button{
   box-shadow: 0 0 0.125rem rgb(0, 0, 0, 0.12), 0 0.063rem 0.125rem rgb(0, 0, 0, 0.14);
   box-sizing: border-box;
   cursor: pointer;
+  overflow: hidden;
 }
 .nav-tab{
   width: 100%;
@@ -965,6 +966,10 @@ body,p,a,ul,li,button{
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 }
+#navtab1{
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
 .nav-tab span{
   position: relative;
   width: 188.33px;
@@ -978,7 +983,7 @@ body,p,a,ul,li,button{
   left: 0px;
   bottom: 0;
   height: 4px;
-  width: 220.328px;
+  width: 100%;
   display: block;
   position: absolute;
   border-bottom-left-radius: 8px;
@@ -1152,6 +1157,7 @@ body,p,a,ul,li,button{
   display: block;
   flex: 0 0 calc(calc(100% - calc(0.75rem*(1 - 1))) / 1);
   padding: 3px;
+  scroll-snap-align: start;
   box-sizing: border-box;
 }
 .cust-card .card-container{
@@ -2211,9 +2217,16 @@ footer{
   }
   #gartner-des-container{
     gap: 6rem;
-    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: relative;
   }
   #gartner-card .card-content{
+    display: block;
     padding: 24px 56px 24px 17px;
     box-sizing: border-box;
   }
@@ -2230,163 +2243,160 @@ footer{
   .resource-nav-container{
     margin-top: 24px;
   }
-.nav-tab{
-  padding: 16px 24px 24px;
-}
-#navtab{
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-}
-.nav-tab span{
-  width: 172.33px;
-}
-.indicator{
-  left: 8px;
-  width: 220.33px;
-  border-bottom-left-radius: 1rem;
-}
-#resource-arrow{
-  top: 8px;
-  right: 52px;
-  margin: 0;
-  height: 64px;
-  width: 20vw;
-  align-items: center;
-  justify-content: right;
-  position: absolute;
-  /* background-color: red; */
-  background: linear-gradient(270deg, #f4fafd 25%, rgba(242, 242, 242, 0) 100%);
-}
-#resource-arrow .left-arrow{
-  display: none;
-}
-.resource-optimize-container{
-  padding: 32px 0px 72px;
-}
-.optimize-container{
-  gap: 1rem;
-  margin: auto;
-  width: calc(83.33333%);
-}
-#resource-card{
-  margin: auto;
-  width: 66.667%;
-  margin-top: 2rem;
-}
-/* work-pending********* */
-#resource-card .card-image-container{
-  padding: 1.5rem;
-}
-/* _____Section-global_____ */
-.glob-des{
-  padding: 0px 48px;
-}
-#glob-intro .intro-button-container{
-  margin-bottom: 32px;
-}
-#glob-intro .intro-button #btn2{
-  padding: 15px 16px;
-}
-/* _____Section-Customer_____ */
-.customer-container{
-  background-image: url(assets/images/customer-bg1.avif);
-}
-.customer-container .site-component-container{
-  padding: 72px 0px;
-}
-#customer-card{
-  margin-top: 32px;
-}
-.customer-card-container{
-  padding-right: 3px;
-  padding-left: 0px;
-  column-gap: 1rem;
-}
-#customer-card .card-content{
-  gap: 2rem;
-}
-.cust-card .card-container{
-  flex-flow: row-reverse;
-}
-.customer-image{
-  flex: 0 0 50%;
-}
-.customer-content{
-  gap: 32px;
-}
-.customer-image .card-image-container{
-  padding: 8px 8px 8px 0px;
-}
-.customer-image .card-image-container img{
-  height: 100%;
-  aspect-ratio: initial;
-}
+  .nav-tab{
+    padding: 16px 24px 24px;
+  }
+  #navtab{
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  .nav-tab span{
+    width: 172.33px;
+  }
+  .indicator{
+    border-bottom-left-radius: 1rem;
+  }
+  #resource-arrow{
+    top: 8px;
+    right: 52px;
+    margin: 0;
+    height: 64px;
+    width: 20vw;
+    align-items: center;
+    justify-content: right;
+    position: absolute;
+    background: linear-gradient(270deg, #f4fafd 25%, rgba(242, 242, 242, 0) 100%);
+  }
+  #resource-arrow .left-arrow{
+    display: none;
+  }
+  .resource-optimize-container{
+    padding: 32px 0px 72px;
+  }
+  .optimize-container{
+    gap: 1rem;
+    margin: auto;
+    width: calc(83.33333%);
+  }
+  #resource-card{
+    margin: auto;
+    width: 66.667%;
+    margin-top: 2rem;
+  }
+  /* work-pending********* */
+  #resource-card .card-image-container{
+    padding: 1.5rem;
+  }
+  /* _____Section-global_____ */
+  .glob-des{
+    padding: 0px 48px;
+  }
+  #glob-intro .intro-button-container{
+    margin-bottom: 32px;
+  }
+  #glob-intro .intro-button #btn2{
+    padding: 15px 16px;
+  }
+  /* _____Section-Customer_____ */
+  .customer-container{
+    background-image: url(assets/images/customer-bg1.avif);
+  }
+  .customer-container .site-component-container{
+    padding: 72px 0px;
+  }
+  #customer-card{
+    margin-top: 32px;
+  }
+  .customer-card-container{
+    padding-right: 3px;
+    padding-left: 0px;
+      column-gap: 1rem;
+  }
+  #customer-card .card-content{
+    gap: 2rem;
+  }
+  .cust-card .card-container{
+    flex-flow: row-reverse;
+  }
+  .customer-image{
+    flex: 0 0 50%;
+  }
+  .customer-content{
+    gap: 32px;
+  }
+  .customer-image .card-image-container{
+    padding: 8px 8px 8px 0px;
+  }
+  .customer-image .card-image-container img{
+    height: 100%;
+    aspect-ratio: initial;
+  }
 
-.carousel-main #customer-card2{
-  padding-left: 0px;
-}
-#customer-card2 .arrow-button{
-  display: none;
-}
-#customer-card2 .carousel-content-container{
-  display: block;
-  padding: 0px 4px 0px 0px;
-  box-sizing: border-box;
-}
-.carousel-container{
-  display: flex;
-  margin-top: 32px;
-  white-space: nowrap;
-  justify-content: center;
-  box-sizing: border-box;
-  /* background-color: #fefefe; */
-}
-#carousel1{
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-}
-#carousel5{
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
-.carousel-outer{
-  max-width: 200px;
-  width: 100%;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  flex-flow: column;
-  justify-content: center;
-  background-color: #fefefe;
-  box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
-  box-sizing: border-box;
-}
-.carousel-inner{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  padding: 16px;
-  white-space: nowrap;
-  align-items: center;
-  box-sizing: border-box;
-}
-.carousel-inner div{
-  display: flex;
-  padding: 16px;
-  white-space: nowrap;
-  align-items: center;
-  box-sizing: border-box;
-}
-.carousel-inner div img{
-  width: 100%;
-  height: 100%;
-  min-width: 84px;
-  min-height: 36px;
-  display: block;
-  object-fit: cover;
-  aspect-ratio: 7 / 3;
-  box-sizing: border-box;
-}
+  .carousel-main #customer-card2{
+    padding-left: 0px;
+  }
+  #customer-card2 .arrow-button{
+    display: none;
+  }
+  #customer-card2 .carousel-content-container{
+    display: block;
+    padding: 0px 4px 0px 0px;
+    box-sizing: border-box;
+  }
+  .carousel-container{
+    display: flex;
+    margin-top: 32px;
+    white-space: nowrap;
+    justify-content: center;
+    box-sizing: border-box;
+    /* background-color: #fefefe; */
+  }
+  #carousel1{
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  #carousel5{
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  .carousel-outer{
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-flow: column;
+    justify-content: center;
+    background-color: #fefefe;
+    box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+    box-sizing: border-box;
+  }
+  .carousel-inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 16px;
+    white-space: nowrap;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .carousel-inner div{
+    display: flex;
+    padding: 16px;
+    white-space: nowrap;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .carousel-inner div img{
+    width: 100%;
+    height: 100%;
+    min-width: 84px;
+    min-height: 36px;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 7 / 3;
+    box-sizing: border-box;
+  }
 #crsl div img{
   min-width: 100px;
   min-height: 0px;
@@ -2564,19 +2574,14 @@ footer{
   .site-gartner{
     background-image: url(assets/images/Gartner-bg-2.avif);
   }
-  /* Section-Gartner */
+  /* Section-Gartner,Mobile */
   #glob-intro, .mobile-app-container{
     width: 99.5%;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
   }
-  /* Section-Mobile */
-  /* .mobile-app-container{
-    width: 99.5%;
-    margin-left: auto;
-    margin-right: auto;
-  } */
+  
   /* Footer */
   .footer-content{
     padding: 0 5%;
@@ -2651,8 +2656,6 @@ footer{
     top: 62px;
   }
   .intro-content-container{
-    /* max-width: 1328px; */
-    /* width: 90%; */
     width: 100%;
     padding: 0px 5%;
   }
@@ -2683,6 +2686,9 @@ footer{
     width: 100%;
     padding: 0 5%;
   }
+  .next-button-container{
+    right: 5%;
+  }
   .card-des-container .card-head{
     font-size: 20px;
     line-height: 28px;
@@ -2708,6 +2714,13 @@ footer{
     max-width: 25%;
   }
   /* Section-resource */
+  .resource-nav-container{
+    width: calc(1328px + 0.5rem);
+    margin-left: -18px;
+  }
+  #resource-arrow{
+    display: none;
+  }
   #resources-container .component-head{
     font-size: 40px;
     line-height: 56px;
@@ -2719,7 +2732,50 @@ footer{
   #resource-card{
     width: 68.570%;
   }
+  #resource-card img{
+    border-radius: 0.5rem;
+  }
+  /* Section-gartner */
+  #gartner-card .card-content{
+    padding-right: 72px;
+  }
+  /* Section-customer */
 
+  .cust-card .card-content{
+    padding-right: 72px;
+  }
+  .git-dev-container{
+    gap: 1rem;
+  }
+  .customer-image .card-image-container{
+    height: 521.25px !important;
+  }
+  .customer-intro .card-head{
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .customer-content .card-head{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* Section-Next */
+  #next-step-container .component-head{
+    font-size: 40px;
+    line-height: 48px;
+  }
+  #next-step-card .site-link{
+    margin-top: 0px;
+  }
+  /* Section-mobile */
+  .mobile-app-container{
+    width: 100%;
+    padding: 24px 72px;
+  }
+  /* footer */
+  .privacy-container{
+    display: flex;
+    justify-content: space-between;
+  }
   
 }
 /* @media screen and (min-width:1195px) {
