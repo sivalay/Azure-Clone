@@ -45,12 +45,10 @@ body,p,a,ul,li,button{
 /* _____Seciton-Nav_____ */
 
 .nav-container{
-  /* height: 48px; */
   width: 100%;
   display: flex;
   padding: 2px 0px;
   position: relative;
-  /* border-bottom: 1px solid #dddddd; */
   align-items: center;
   box-sizing: border-box;
 }
@@ -139,19 +137,6 @@ body,p,a,ul,li,button{
   padding: 0px 16px;
   cursor: pointer;
 }
-/* .drop-down-text::after{
-  content: "";
-  font-family: 'Icons';
-  font-size: 12px;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: normal;
-  padding-left: 10px;
-  position: relative;
-  top: 3px;
-  box-sizing: border-box;
-  cursor: pointer;
-} */
  .menu{
   width: 20px;
   height: 20px;
@@ -267,7 +252,6 @@ body,p,a,ul,li,button{
   font-weight: 600;
   line-height: 1.375rem;
   letter-spacing: -0.02em;
-  /* padding: 12px; */
   border-radius: 8px;
   text-align: center;
   box-sizing: border-box;
@@ -283,7 +267,6 @@ body,p,a,ul,li,button{
   color: #004275;
   border: 2px solid #222222;
   padding: 12px 12px 14px;
-  /* padding-bottom: 14px; */
   cursor: pointer;
 }
 /* site-content */
@@ -482,7 +465,6 @@ body,p,a,ul,li,button{
   border: 2px solid #0078D4;
   padding: 0.5rem;
 }
-/* letter spacing */
 .link-container .site-button::after{
   content: "";
   font-family: 'Icons';
@@ -825,6 +807,7 @@ body,p,a,ul,li,button{
 }
 
 /* Section-Gartner */
+
 .site-gartner-container{
   width: 100%;
   display: block;
