@@ -918,11 +918,6 @@ body,p,a,ul,li,button{
   margin-left: -2px;
   text-wrap-mode: nowrap;
 }
-
-
-/* on-work-------------- */
-
-
 .nav-tab-container{
   height: 100%;
   width: 100%;
@@ -973,11 +968,6 @@ body,p,a,ul,li,button{
   background-color: #004275;
   box-sizing: border-box;
 }
-
-
-/* end--------------- */
-
-
 .arrow-button{
   width: 100%;
   display: flex;
