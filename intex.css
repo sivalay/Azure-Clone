@@ -296,7 +296,6 @@ body,p,a,ul,li,button{
   box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
   z-index: 1;
 }
-
 .featured-news .featured-text{
   display: flex;
   width: 100%;
@@ -2322,7 +2321,6 @@ footer{
     white-space: nowrap;
     justify-content: center;
     box-sizing: border-box;
-    /* background-color: #fefefe; */
   }
   #carousel1{
     border-top-left-radius: 1rem;
