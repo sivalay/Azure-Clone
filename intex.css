@@ -1105,7 +1105,7 @@ body,p,a,ul,li,button{
   display: block;
   position: relative;
   margin-top: 24px;
-  padding: 0px 4px;
+  padding: 0px 2px 0px 4px;
   overflow-x: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
@@ -1128,7 +1128,7 @@ body,p,a,ul,li,button{
   height: auto;
   display: block;
   flex: 0 0 calc(calc(100% - calc(0.75rem*(1 - 1))) / 1);
-  padding: 3px;
+  padding: 3px 0px 3px 7px;
   scroll-snap-align: start;
   box-sizing: border-box;
 }
@@ -1149,6 +1149,18 @@ body,p,a,ul,li,button{
   height: 100%;
   object-fit: cover;
   white-space: nowrap;
+}
+.customer-image #card-image1{
+  min-height: 227.43px;
+}
+.customer-image #card-image3{
+  min-height: 241.93px;
+}
+.customer-image #card-image4{
+  min-height: 238.93px;
+}
+.customer-image #card-image5{
+  min-height: 250.23px;
 }
 /* image-heigth-pending */
 .customer-image .card-image-container img{
@@ -1219,6 +1231,9 @@ body,p,a,ul,li,button{
   justify-content: flex-start;
   box-sizing: border-box;
 }
+#cust-link2{
+  gap: 0.75rem;
+}
 .git-dev-container{
   display: flex;
   flex-basis: auto;
@@ -1254,7 +1269,7 @@ body,p,a,ul,li,button{
 }
 #customer-card2 .arrow-button{
   /* margin-top: 19px; */
-  margin-top: 35px;
+  margin-top: 32px;
   gap: 8px;
   margin-left: -3px;
 }
@@ -1277,9 +1292,6 @@ body,p,a,ul,li,button{
   margin: 0px;
   padding-left: 7px;
 }
-#customer-card2 .arrow-button{
-  margin-top: 29px;
-}
 #customer-card2 .left-arrow::after{
   margin-left: -2px;
 }
@@ -1288,6 +1300,9 @@ body,p,a,ul,li,button{
 }
 #customer-card2 .link-container{
   margin: 24px 0px 3px -3px;
+}
+#site-link1{
+  margin-top: -1px;
 }
 #customer-card2 .carousel-content-container{
   display: none;
@@ -1481,13 +1496,13 @@ footer{
 }
 .footer-end-container{
   display: block;
-  margin: 12px 0px 3px;
+  margin: 12px 0px 6px;
   box-sizing: border-box;
 }
 .footer-end-container li{
   display: inline-block;
   white-space: nowrap;
-  padding: 6px 10px 0px 0px;
+  padding: 11px 10px 4px 0px;
 }
 .footer-end-container li a{
   color: #616161;
