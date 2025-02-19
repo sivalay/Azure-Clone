@@ -1307,6 +1307,7 @@ body,p,a,ul,li,button{
 #customer-card2 .carousel-content-container{
   display: none;
 }
+
 /* Section-NextStep */
 
 .next-step-container{
@@ -1337,7 +1338,6 @@ body,p,a,ul,li,button{
 #next-step-card .card-head{
   margin-top: 0;
 }
-
 /* Section-Mobile */
 
 .Azure-mobile-app-container{
@@ -1380,6 +1380,7 @@ body,p,a,ul,li,button{
   background-color: #e6e6e6;
   box-sizing: border-box;
 } 
+
 .app-icon img{
   margin: 3px 0 0 2px;
 }
