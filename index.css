@@ -410,6 +410,14 @@ body,p,a,ul,li,button{
   border-radius: 0.5rem;
   aspect-ratio: 2.33333;
 }
+/* .card-image-container picture source{
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  aspect-ratio: 2.33333;
+} */
 
 .card-content{
   height: 100%;

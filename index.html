@@ -172,7 +172,9 @@
                                     </div>
                                     <div class="component-card-container" id="feature-card">
                                         <div class="card-container">
-                                            <div class="card-image-container"><img src="assets/images/protect-img.avif" alt="protect-img"></div>
+                                            <div class="card-image-container">
+                                                <img src="assets/images/protect-img.avif" alt="protect-img">
+                                            </div>
                                             <div class="card-content">
                                                 <div class="card-des-container">
                                                     <div class="card-head">Protect, adapt, and innovate with Windows Server 2025 on Azure</div>
@@ -253,7 +255,13 @@
                                                 <div class="solution-vedio">
                                                     <a class="video-top-link"><span href="#">Explore Azure AI solutions</span></a>
                                                     <div class="video-container">
-                                                        <div class="video-img"><img src="assets/images/solutions-img.avif" alt=""><div class="video-icon"><span></span></div></div>
+                                                        <picture class="video-img">
+                                                            <source media="(min-width:540px)" src="assets/images/solutions-img.avif">
+                                                            <source media="(min-width:860px)" srcset="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/386597-desktop-vertical-accordion-solutions-featured-tab-1-800x636?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&hei=1273&qlt=100&fmt=png-alpha&fit=constrain">
+                                                            <img src="assets/images/solutions-img.avif" alt="protect-img">
+                                                            <div class="video-icon"><span></span></div>
+                                                        </picture>
+                                                        <!-- <div class="video-img"><img src="assets/images/solutions-img.avif" alt=""><div class="video-icon"><span></span></div></div> -->
                                                     </div>
                                                 </div>
                                             </div>
